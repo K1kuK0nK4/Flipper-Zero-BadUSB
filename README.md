@@ -16,4 +16,4 @@ Feel free to fork and contribute to the community.
 
 ## Usage
 
-he concept of executing the PowerShell payload in base64 was inspired by the project at https://github.com/InfoSecREDD/REPG.
+The idea of run the PowerShell payload in base64 was inspired by the project from [InfoSecREDD](https://github.com/InfoSecREDD/REPG).
