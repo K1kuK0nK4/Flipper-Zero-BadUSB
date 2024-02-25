@@ -1,14 +1,11 @@
 # Flipper-Zero-BadUSB
 
-****
 Flipper Zero BadUSB payloads for relaying data to a Discord webhook.
 
-****
 ## About
 
 This repository contains a collection of payloads for the Flipper Zero, USB Rubber Ducky or similar devices. The provided script serves as a foundational template for various payloads.
 
-****
 ## Disclaimer
 
 All these payloads are designed for educational, testing, and research purposes in cybersecurity.
