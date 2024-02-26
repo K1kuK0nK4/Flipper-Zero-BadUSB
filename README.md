@@ -2,7 +2,7 @@
 Flipper Zero BadUSB payloads for relaying data to a Discord webhook.
 
 ## About
-This repository contains a collection of payloads for the Flipper Zero, USB Rubber Ducky or similar devices. 
+This repository contains a collection of payloads for the Flipper Zero, USB Rubber Ducky, or similar devices adapted with a Discord webhook to receive the data.
 
 The idea of run the PowerShell payload in base64 was inspired by the project from [InfoSecREDD](https://github.com/InfoSecREDD/REPG).
 
